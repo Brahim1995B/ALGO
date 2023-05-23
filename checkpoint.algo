@@ -1,0 +1,28 @@
+ALGORITHM chechpoint
+VAR
+    c:char;
+    i:INTEGER;
+    j:INTEGER;
+    f:INTEGER;
+BEGIN
+    i=0;
+    j=1;
+    f=0;
+    REPEAT
+    Write("donner un char");
+    Read(c)
+         f=f+1;
+        IF (c='a' OR c='e' OR c='y' OR c='i'OR c='o' OR c='u' OR c='A' OR c='E' OR c='U' OR c='O' OR c='I' OR c='Y') THEN
+           i=i+1;
+        END_IF
+
+        IF (c=' ') THEN
+            j=j+1;
+        END_IF
+     
+    UNTIL (c='.');
+    Write("donner le nbr de voiel",i);
+    Write("donner le nbr de mot",j);
+    Write("donner le nbr de char",f);
+
+END
